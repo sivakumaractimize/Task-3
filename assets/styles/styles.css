@@ -1,0 +1,322 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#head{
+    position: absolute;
+    left: 90px;
+}
+
+#icon{
+    width: 80px;
+    height: 9vh;
+    position: absolute;
+    left: 0px;
+    box-shadow: 0px 0px ;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    row-gap: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+}
+#list{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+    font-size: 25px;
+    position: absolute;
+    right: 100px;
+}
+.replist{
+    display: block;
+}
+
+#button{
+    width: 60px;
+    height: 25px;
+    position: relative;
+    left: 110px;
+    display: none;
+
+}
+
+
+
+#main{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./bridge-8608105_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+
+
+}
+#headline{
+    color: wheat;
+    position: absolute;
+    top: 150px;
+
+
+}
+#book{
+    width: 90px;
+    height: 30px;
+    border: 2px solid rgba(217, 228, 158, 0.585);
+    color: wheat;
+    border-radius: 5px;
+    background-color: rgb(219, 235, 198);
+    background-color: transparent;
+
+}
+#about{
+    background-color: rgb(198, 197, 195);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#headline{
+    font-size: 40px;
+    padding:5px;
+    position: absolute;
+    top: 250px;
+    text-shadow:  2px solid rgb(161, 157, 157);
+}
+
+
+#image-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: 0px 1px 3px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.image-div {
+    width: 30%;
+    height: 250px; 
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+input{
+    font-size: 18px;
+    background-color: rgb(232, 154, 11);
+    border-radius: 3px;
+    width: 100px;
+}
+#place-visit{
+    width: 20%;
+    height: 30px;
+    font-size: 30px;
+    font-style: oblique;
+    background-color: rgb(118, 184, 162);
+    border: 5px solid rgb(161, 154, 154);
+    border-radius: 0px 20px 20px 0px ;
+}
+
+
+
+#footer{
+    width: 100%;
+    height: 10vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+#social-icon{
+    font-size: 36px;
+}
+
+
+
+
+
+@media only screen and (max-width: 674px) 
+{ 
+#navbar{
+    width: 100%;
+    background-color: brown;
+}
+#headline{
+    font-size: 20px;
+    padding:5px;
+    position: absolute;
+    top: 100px;
+    text-shadow: 2px 2px solid black;
+}
+#button{
+    display: block;
+    position: relative;
+    right: 10px;
+    
+}
+.replist{
+    display: none;
+}
+#Dropdown-list{
+    display: none;
+    position: relative;
+    top: 50px;
+    left: 70px;
+    list-style: none;
+    background-color: azure;
+    color: black;
+    width: 60px;
+}
+#button:hover + #Dropdown-list{
+    display: block;
+    position: relative;
+    right: 80px;
+}
+
+
+
+
+
+
+
+
+#book{
+    position: absolute;
+    top: 200px;
+    
+
+}
+
+
+#about{
+    width: 100%;
+    position: absolute;
+    top: 42vh;
+}
+
+#image-container {
+    flex-direction: column; /* Stack divs vertically */
+    align-items: center; /* Center divs horizontally */
+    position: relative;
+    align-content: space-between;
+    height: auto;
+    column-gap: 10vh;
+    top: 80px;
+}
+
+.image-div {
+    width: 80%; 
+    margin-bottom: 10px; 
+    box-shadow: 5px solid black;
+    border: 2px red;
+
+}
+#img1{
+    position: relative;
+    bottom: 110px;
+}
+#img2{
+    position: relative;
+    top: 0px;
+}
+#img3{
+    position: relative;
+    top: 90px;
+}
+ #place-visit{
+   position: relative;
+    bottom: 60px;
+    width: 80%;
+
+} 
+
+
+
+#footer{
+    width: 100%;
+    position: relative;
+    top: 45vh;
+}
+
+
+
+
+
+}
+@media only screen and (max-width: 325px) and (min-width:100px)
+ {
+    #place-visit{
+        font-size: 20px;
+        position: absolute;
+        top: 590px;
+
+ }
+ #img1{
+    position: relative;
+    bottom: 80px;
+}
+}
+@media only screen and (max-width: 600px) and (min-width:326px)
+ {
+    #place-visit{
+        position:absolute;
+         bottom: 60px;
+         width: 50%;
+     
+     } 
+
+ }
+
+ @media only screen and (min-width: 674px) 
+ {
+    #Dropdown-list
+    {
+        display: none;
+    }
+
+ }
+
+ /* @media only screen and (max-width: 475px) 
+ {
+    #place-visit{
+        position: relative;
+         bottom: 120px;
+         width: 50%;
+     
+     } 
+
+ } */
+ @media only screen and (width: 768px) 
+ {
+    #place-visit{
+        position: relative;
+         bottom: 0px;
+         width: 30%;
+     
+     } 
+
+ }
